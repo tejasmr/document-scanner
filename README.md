@@ -77,7 +77,7 @@ import pytesseract as pt
 from PIL import Image
 
 img = cv2.imread('image.jpg')
-output_string = pt.image_to_string(img)
+output_string = pt.image_to_string(Image.fromarray(img))
 print(output_string)
 ```
 
